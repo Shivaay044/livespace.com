@@ -13,24 +13,24 @@ import { FaGreaterThan } from 'react-icons/fa';
 const data = [ {
   imageURL:
     'https://images.livspace-cdn.com/w:320/h:234/dpr:1/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/unification-home-1663681501-pVo75/desktop-1663681517-hulYi/offerings-interiors-1682066909-GMFDK/modular-1-1682066917-W5NcL.jpg',
-  name: 'diwakar Classic',
-  text:"Creating React Application And Installing Module"
+  name: 'Full Home Interiors',
+  text:"Functional modular solutions for kitchen & wardrobes"
 }, {
     imageURL:
-      'https://images.livspace-cdn.com/w:320/h:234/dpr:1/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/unification-home-1663681501-pVo75/desktop-1663681517-hulYi/offerings-interiors-1682066909-GMFDK/modular-1-1682066917-W5NcL.jpg',
-    name: 'Wayfarer Classic',
-    text:"Creating React Application And Installing Module"
+      'https://images.livspace-cdn.com/w:320/h:234/dpr:1/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/unification-home-1663681501-pVo75/desktop-1663681517-hulYi/offerings-interiors-1682066909-GMFDK/full-home-1682066987-lk16r.jpg',
+    name: 'Renovations',
+    text:"Interiors for every nook and corner of your home"
   },{
     imageURL:
-      'https://images.livspace-cdn.com/w:320/h:234/dpr:1/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/unification-home-1663681501-pVo75/desktop-1663681517-hulYi/offerings-interiors-1682066909-GMFDK/modular-1-1682066917-W5NcL.jpg',
-    name: 'Wayfarer Classic',
-    text:"Creating React Application And Installing Module"
+      'https://images.livspace-cdn.com/w:320/h:234/dpr:1/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/unification-home-1663681501-pVo75/desktop-1663681517-hulYi/offerings-interiors-1682066909-GMFDK/reno-1682066988-lqJkS.jpg',
+    name: 'Commercial Interiors',
+    text:"Give your home a brand new look and feel"
   },
   {
     imageURL:
-      'https://images.livspace-cdn.com/w:320/h:234/dpr:1/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/unification-home-1663681501-pVo75/desktop-1663681517-hulYi/offerings-interiors-1682066909-GMFDK/modular-1-1682066917-W5NcL.jpg',
-    name: 'Wayfarer Classic',
-    text:"Creating React Application And Installing Module"
+      'https://images.livspace-cdn.com/w:320/h:234/dpr:1/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/unification-home-1663681501-pVo75/desktop-1663681517-hulYi/offerings-interiors-1682066909-GMFDK/commercial-1682066986-5w6x0.jpg',
+    name: 'Modular Interiors',
+    text:"Functional modular solutions for kitchen & wardrobes"
   }]
 
 
@@ -40,7 +40,7 @@ const data = [ {
 function Cart() {
   return (
     <>
-    <SimpleGrid columns={{base:"1",md:"4"}} mt={"5"}>
+    <SimpleGrid columns={{base:"1",md:"4"}} mt={"5"} gap="5">
    { data.map((el)=> <Box
     
   

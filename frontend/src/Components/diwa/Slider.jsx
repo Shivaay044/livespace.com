@@ -10,6 +10,7 @@ import {
   Heading,
   Text,
   Container,
+  Button
 } from '@chakra-ui/react'
 // Here we have used react-icons package for the icons
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi'
@@ -40,20 +41,20 @@ export default function SliderFun() {
   
   const cards = [
     {
-      title: 'Alfa bita gamma',
-      text: "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+      title: 'A home so good, youll love the way you Liv',
+      Button: "Book free conslten.",
       image:
-        'https://images.livspace-cdn.com/w:1920/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/homepage/v2-1675654701-1kKSt/desktop-1675655000-6H0mD/banner-1675655465-eXung/virat-anushka-kitchen-livspace-w-1689596750-qERTz.jpg',
+        'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1400&q=80',
     },
     {
-      title: 'Alfa bita gamma',
-      text: "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+      title: 'Come say hi to beautiful interiors',
+      Button: "Calculate Now.",
       image:
         'https://images.livspace-cdn.com/w:1920/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/homepage/v2-1675654701-1kKSt/desktop-1675655000-6H0mD/banner-1675655465-eXung/kitchen-homepage-banner-web-1689683306-uyQOf.jpg',
     },
     {
-      title: 'Alfa bita gamma',
-      text: "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+      title: 'Want to know how much your kitchen interiors will cost?',
+      Button: "Visit us.",
       image:
         'https://images.livspace-cdn.com/w:1920/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/homepage/v2-1675654701-1kKSt/desktop-1675655000-6H0mD/banner-1675655465-eXung/dining-room-webbanner-d-1689597794-Kyvb0.jpg',
     },
@@ -106,7 +107,8 @@ export default function SliderFun() {
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
-            backgroundImage={`url(${card.image})`}>
+            backgroundImage={`url(${card.image})`}
+            >
             {/* This is the block you need to change, to customize the caption */}
             <Container size="container.lg" height="600px" position="relative">
               <Stack
@@ -116,12 +118,12 @@ export default function SliderFun() {
                 position="absolute"
                 top="50%"
                 transform="translate(0, -50%)">
-                <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+                <Heading fontSize={{ base: '3xl', md: '4xl'}} >
                   {card.title}
                 </Heading>
-                <Text fontSize={{ base: 'md', lg: 'lg' }} color="GrayText">
-                  {card.text}
-                </Text>
+                <Button m="auto" w="max-content" fontSize={{ base: 'md', lg: 'lg' }} bg="#eb595f" borderRadius="20px" >
+                  {card.Button}
+                </Button>
               </Stack>
             </Container>
           </Box>

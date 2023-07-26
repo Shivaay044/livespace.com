@@ -21,9 +21,9 @@ export const HomePage = () => {
         {/* One-stop shop for all things interiors */}
         <Box>
             <Container maxW={"container.xl"}>
-     <Heading  mt={"4"}>One-stop shop for all things interiors</Heading>
-     <Text fontSize={{base:"lg",md:"2xl"}}>Be it end-to-end interiors, renovation or modular solutions, we have it all for your home</Text>
-     <Text fontSize={{base:"lg",md:"2xl"}}>or office. With a wide range of furniture & decor, we have your back from start to finish.</Text>
+     <Heading  mt={"4"} fontSize={{base:"xl",md:"4xl"}}>One-stop shop for all things interiors</Heading>
+     <Text fontSize={{base:"lg",md:"xl"}}>Be it end-to-end interiors, renovation or modular solutions, we have it all for your home</Text>
+     <Text fontSize={{base:"lg",md:"xl"}}>or office. With a wide range of furniture & decor, we have your back from start to finish.</Text>
      {/* cart is here ! */}
      <Cart />
   {/* Inspiration for home interior designs part here */}
