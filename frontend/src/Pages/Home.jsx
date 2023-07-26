@@ -5,11 +5,13 @@ import FAQS from "../Components/main/FAQS";
 import New from "../Components/main/New";
 import Trophy from "../Components/main/Trophy";
 import Trending from "../Components/main/Trending";
+import { HomePage } from "../Components/diwa/HomePage";
 
 
 function Home() {
   return <div>
     <Navbar/>
+    <HomePage />
     <Trending/>
     <Trophy/>
     <New/>
